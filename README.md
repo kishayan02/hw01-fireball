@@ -2,6 +2,10 @@
 
 ## README: Kisha Yan hw01
 
+C:\Users\kisha\Documents\Fall 2023\CIS 5660\hw01-fireball\Fireball1.jpg
+
+C:\Users\kisha\Documents\Fall 2023\CIS 5660\hw01-fireball\Fireball2.jpg
+
 1. Vertex shader: I applied a low-frequency, high-amplitude displacement of my sphere using sin and impulse functions, which added some irregular bumps to the sphere. I also applied a higher-frequency, lower-amplitude layer of fbm using the triangle wave function and time, making the fireball appear to roil. The fbm function variables for both the number of octaves, as well as the strength.
 
 2. Fragment shader: I used the displacement value (from the vertex shader) in a bias function to create a bias value, which I used to interpolate between the inner and outer fireball colors to create a gradient. I also used the triangle wave function, along with time, to create a new value to interpolate with for the final color. My fireball slowly becomes the inner color, before becoming a gradient again.
