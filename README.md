@@ -2,9 +2,9 @@
 
 ## README: Kisha Yan hw01
 
-C:\Users\kisha\Documents\Fall 2023\CIS 5660\hw01-fireball\Fireball1.jpg
+![Fireball1](https://github.com/kishayan02/hw01-fireball/assets/97934823/0fd9f12c-8a40-465b-a234-dc32c89ba011)
 
-C:\Users\kisha\Documents\Fall 2023\CIS 5660\hw01-fireball\Fireball2.jpg
+![Fireball2](https://github.com/kishayan02/hw01-fireball/assets/97934823/231c896f-1fc8-46ec-9e02-81d5641b86fb)
 
 1. Vertex shader: I applied a low-frequency, high-amplitude displacement of my sphere using sin and impulse functions, which added some irregular bumps to the sphere. I also applied a higher-frequency, lower-amplitude layer of fbm using the triangle wave function and time, making the fireball appear to roil. The fbm function variables for both the number of octaves, as well as the strength.
 
