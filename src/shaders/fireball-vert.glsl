@@ -109,8 +109,6 @@ void main()
                         triangleWave(vs_Pos.y + u_Time / 1000.f, 0.6, 2.0),
                         triangleWave(vs_Pos.z + u_Time / 1000.f, 0.6, 2.0));
     float fbmDisplacement = u_Strength * fbm(point, u_Octaves); // higher-frequency, lower-amplitude layer of fbm to apply a finer level of distortion
-    
-    // add variables^ vs_FbmStrength, vs_Octaves
     fs_Displacement = sphereDisplacement + fbmDisplacement;
     
     vec4 modelposition = u_Model * (vs_Pos + (vs_Nor * fs_Displacement));

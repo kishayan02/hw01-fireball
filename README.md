@@ -1,5 +1,19 @@
 # [Project 1: Noise](https://github.com/CIS-566-Fall-2022/hw01-fireball-base)
 
+## README: Kisha Yan hw01
+
+1. Vertex shader: I applied a low-frequency, high-amplitude displacement of my sphere using sin and impulse functions, which added some irregular bumps to the sphere. I also applied a higher-frequency, lower-amplitude layer of fbm using the triangle wave function and time, making the fireball appear to roil. The fbm function variables for both the number of octaves, as well as the strength.
+
+2. Fragment shader: I used the displacement value (from the vertex shader) in a bias function to create a bias value, which I used to interpolate between the inner and outer fireball colors to create a gradient. I also used the triangle wave function, along with time, to create a new value to interpolate with for the final color. My fireball slowly becomes the inner color, before becoming a gradient again.
+
+3. Toolbox functions: I used sin, impulse, bias, and triangle wave functions.
+
+4. Interactivity: My interactive variables are the internal fireball color, external fireball color, number of octaves for fbm, and strength of fbm. I also have a restore to defaults button.
+
+5. EC: I added a background using fbm and the internal color that changes color with time
+
+Thanks :)
+
 ## Objective
 
 Get comfortable with using WebGL and its shaders to generate an interesting 3D, continuous surface using a multi-octave noise algorithm.

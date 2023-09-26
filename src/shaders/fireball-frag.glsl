@@ -37,13 +37,9 @@ float triangleWave(float x, float freq, float amplitude) {
 
 void main()
 {
-    // float fbmValue = fbm(vec3(fs_Nor[0], fs_Nor[1], fs_Nor[2]));
-    // float f = fbmValue * 3.f;
-    // out_Col = u_Color * (f - floor(f));
-
     float biasValue = bias(fs_Displacement * 1.2, 0.3);     // Bias based on displacement
     vec4 newColor = mix(u_InnerColor, u_OuterColor, biasValue);
 
-    float triangleValue = triangleWave(u_Time / 1000.f, 0.6, 2.0);  // Time
+    float triangleValue = triangleWave(u_Time / 1000.f, 0.6, 2.0);  // Change color based on time
     out_Col = mix(u_InnerColor, newColor, triangleValue);
 }
